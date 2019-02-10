@@ -1,0 +1,286 @@
+/*
+Theme Name: Biju's Theme
+Author: Biju Ale
+Author URI: https://github.com/BijuAle
+Version: 1.0
+*/
+
+/*reset default margin & padding*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*Fonts*/
+@font-face {
+	font-family: Caslon;
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/ACaslonPro-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: Cheltenham;
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/CheltenhamBookRegular.otf) format('opentype');
+}
+
+body{
+	font-family: Caslon !important;
+	color: #049372;
+	background:url(images/cartographer.png) fixed;
+}
+
+/* Links */
+a{
+	color: #049372;
+	text-decoration:none;
+}
+a:hover {
+	color: #ddd;
+}
+
+a:active {
+	color: black;
+}
+article.post, article.page{
+	margin-bottom:30px;
+	border-bottom: 1px solid #171212;
+	
+}
+article.last-of-type{
+	margin-bottom:0;
+}
+.post-info{
+	font-style: italic;
+	font-size: 87%;
+	color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+	color: #999;
+}
+.post-header, .page-header{
+	margin-bottom: 12px;
+}
+
+/*General layout*/
+div.container{
+	max-width: 550px;
+	margin:0 auto;
+}
+/*Header*/
+.site-header{
+	text-align: center;
+	margin-bottom: 70px;
+	position:sticky;
+	top:0px;
+	background:url(images/cartographer.png) fixed;
+}
+#blogName{
+	text-transform: uppercase;
+	margin:0;
+}
+#blogDesc, .wp-caption-text{
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+/*Footer*/
+.site-footer{
+	font-size: 0.9em;
+	text-align: center;
+	position: sticky;
+	bottom:0px;
+	background:url(images/cartographer.png) fixed;
+}
+.site-footer>span{
+	padding:3px;
+}
+
+/* Standard Nav Menu */
+.site-nav{
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+.site-nav ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.site-nav ul li {
+	list-style: none;
+	float: left;
+	margin: 0 10px 0 10px;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+	font-weight: bold;
+	color: #FFF;
+}
+
+/*image wrapping in wordpress posts*/
+
+img {
+     padding: 5px;
+}
+
+
+img.alignright {float:right; margin:1em 0 1em 1em}
+img.alignleft {float:left; margin:1em 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #775252;
+	margin: 1em 0;
+	padding: 0; 
+}
+ul li {
+	list-style-type: disc;
+	margin-left: 1.5em; /* which should give space for the disc to show */
+    list-style-position: inside; /* will put the disc inside of the li
+    element, for debugging purposes */
+}
+p {
+	margin: 0 0 1em 0;
+	text-align: justify;
+}
+
+/* Comments
+-------------------------------------------------------------------*/
+#comments>h3{
+	text-align: center;
+	margin-top: 20px;
+}
+.comment-author>img{
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.children .comment{
+	border-bottom: none;
+	margin-top: 0;
+	padding-bottom: 0;
+}
+
+.commentForm{
+	text-align: left;
+	text-transform: uppercase;
+	padding:5px;
+}
+.commentForm em{
+	text-transform: lowercase;
+	font-style: italic;
+	color: #999;
+	font-size: 1em;
+}
+.commentForm input[type=text]{
+	display: block;
+	margin-bottom: 15px;
+	width: 220px;
+	background-color : #8a4b4b; 
+	border-color: #8a4b4b;
+	color:black;
+	padding: 3px;
+
+}
+.commentForm textarea{
+	width: 242px;
+	max-width: 242px; /* Restricts the resizing capability in webkit bases browsers */
+	height: 120px;
+	background-color : #8a4b4b; 
+	border-color: #8a4b4b;
+	color:black;
+	padding: 3px;
+
+}
+
+.commentForm input[type=submit]{
+	float: left;
+	margin: 8px;
+}
+.comment #respond{
+	margin-left: -52px; /* Shift inline comment box to accomodate for gravatar */
+}
+
+.comment-content>p{
+	margin:0;
+	padding-top: 7px;
+	color:#b562ad;
+}
+.reply, .comment-metadata{
+	font-size:0.8em;
+	font-style: italic;
+}
+.comment{
+	list-style: none;
+	margin-bottom: 25px;
+}
+.comment-body{
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+fieldset{
+	margin-top: 20px;
+	border-color: #8a4b4b;
+}
+
+/* Form Elements */
+input[type=submit]{
+	padding: 3px 10px;
+	color: #ddd;
+	background-color: #8a4b4b;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999;
+	border-radius: 10px;
+	-webkit-transition: border-color .2s ease-in, background-color .2s ease-in;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 10px;
+	cursor: pointer;
+}
+input[type=submit]:hover,
+input[type=submit]:focus{
+	background-color: brown;
+	border-color: #666;
+}
+table{
+	font-size:0.75em;
+}
+/*Blockquote*/
+blockquote {
+	max-width: 420px;
+	font-style: italic;
+	text-align: justify;
+	border-left: 2px solid #2f612a;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	color: #2f612a;
+	content: open-quote;
+	font-size: 2em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+	display: inline;
+	text-align: center;
+}
+cite {
+	line-height: 3;
+	text-align: left;
+}
